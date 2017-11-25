@@ -41,3 +41,15 @@ plugins:
 #   - vendor/ruby/
 
 repository: JamiesWhiteShirt/JamiesWhiteShirt.github.io
+
+collections:
+  resources:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: resources
+    values:
+      layout: resource
