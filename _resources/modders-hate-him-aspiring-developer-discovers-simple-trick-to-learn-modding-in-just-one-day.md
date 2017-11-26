@@ -23,7 +23,7 @@ Both resources you find and people you ask for help will likely refer to Java co
 If their language seems alien, you need to spend some time learning instead of doing.
 
 ### It is hard to:
-- Implement custom interactions to blocks and items.
+- Implement custom interactions for blocks and items.
 - Implement new game mechanics.
 - Work with APIs from other mods.
 - Implement custom rendering.

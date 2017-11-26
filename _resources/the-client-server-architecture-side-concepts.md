@@ -3,7 +3,7 @@ title: "The client-server architecture: Side concepts"
 ---
 Minecraft applies a universal client-server architecture in both multi player and single player.
 Sometimes it may be unclear how it works, how to deal with it, and what are good practices.
-This article explains some necessary concepts to get started.
+This resource explains some necessary concepts to get started.
 
 _This is part one of a work in progress series of resources on Minecraft's client-server architecture._
 
