@@ -42,7 +42,7 @@ It will also be easier to follow the MinecraftForge documentation.
 - Create new dimensions with custom world generation.
 
 At this step, you are more or less on your own. You must become an actual programmer.
-Very few Minecraft specific resources exist for these kinds of tasks. You will have to depend non-Minecraft related resources.
+Very few Minecraft specific resources exist for these kinds of tasks. You will have to depend on non-Minecraft related resources.
 
-It is possible that no conventional hook exists for what you want to do, which means you might have to use reflection or access transformation.
-In the worst case, a core mod is required.
+It is possible that no conventional hook exists for what you want to do, which means you might have to use unconventional means such as reflection or access transformation.
+In the worst case, a core mod is required, which is a highly advanced subject.
