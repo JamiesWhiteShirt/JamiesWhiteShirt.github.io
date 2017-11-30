@@ -1,21 +1,11 @@
 ---
-title: "The art of troubleshooting"
+title: "Troubleshooting"
+series: "The art of problem solving"
 ---
-Modding is not always a walk in the park. You will find yourself in a situation where _something_ goes wrong.
-How should you troubleshoot? Can you resolve the problem on your own, or should you ask for help?
+Troubleshooting is about diagnosing and fixing an issue with something that doesn't work the way it should.
 This resource describes a general approach to troubleshooting.
 
-You must learn to **classify** and **identify** your problem first.
-
-### Your goals should be to:
-- **Do your research or solve the problem independently if you can.**
-  Time is precious, and not everyone is helpful.
-  It is your problem, so it is expected of you to do what you can to solve it before you ask others.
-  If your question is very basic and you haven't done your research, you may be met with hostility.
-- **Learn something along the way.**
-  If your knowledge isn't up to speed, solving a problem is a great way to do something about it.
-  When identifying an issue, you should learn _why_ it is an issue and _how the solution resolves it_.
-  This way you may save time and learn how to avoid similar problems in the future.
+The first part of troubleshooting is **classifying** and **identifying** your problem.
 
 ### A note on troubleshooting with tutorials
 If you are following a tutorial, ensure you are following the steps correctly and not deviating too much.

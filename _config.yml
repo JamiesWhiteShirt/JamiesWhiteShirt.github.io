@@ -45,7 +45,10 @@ repository: JamiesWhiteShirt/JamiesWhiteShirt.github.io
 collections:
   resources:
     output: true
-    permalink: /:collection/:path/
+    permalink: /resources/:path/
+  series:
+    output: true
+    permalink: /resources/:path/
 
 defaults:
   - scope:
@@ -53,3 +56,8 @@ defaults:
       type: resources
     values:
       layout: resource
+  - scope:
+      path: ""
+      type: series
+    values:
+      layout: series

@@ -1,17 +1,9 @@
 ---
-title: "The client-server architecture: Side concepts"
+title: "#1: Side concepts"
+series: "The client-server architecture"
 ---
-Minecraft applies a universal client-server architecture in both multi player and single player.
-Sometimes it may be unclear how it works, how to deal with it, and what are good practices.
-This resource explains some necessary concepts to get started.
-
-_This is part one of a work in progress series of resources on Minecraft's client-server architecture._
-
-Multiple computers need to agree on a truth about the Minecraft game state and the way it changes.
-This is why the client-server architecture is applied.
-The server is the single, universal source of truth that all clients agree on.
-
 When discussing Minecraft's architecture, the terms "server" and "client" may be ambiguous.
+This resource explains some necessary concepts to get started.
 
 # Logical sides - The separation of concerns
 The Minecraft game has two **logical sides**. A logical side refers to a specific part of the game logic that has certain responsibilities.

@@ -3,18 +3,24 @@ layout: default
 ---
 <div id="title">
   <h1>{{ page.title }}</h1>
-  {% if page.series %}
-  {% for series in site.series %}
-  {% if page.series == series.title %}
-  <p><a href="{{ series.url }}">{{ series.title }}</a> on <a href="/">{{ site.title | default: site.github.repository_name }}</a></p>
-  {% endif %}
-  {% endfor %}
-  {% else %}
   <p>On <a href="/">{{ site.title | default: site.github.repository_name }}</a></p>
-  {% endif %}
   <hr>
   <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
   <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
 </div>
 
 {{ content }}
+
+<h1>Resources in this series:</h1>
+
+<ul>
+  {% for resource in site.resources %}
+  {% if resource.series == page.title %}
+  <li>
+    <p>
+      <strong><a href="{{ resource.url }}">{{ resource.title }}</a></strong> {{ resource.excerpt | remove: '<p>' | remove: '</p>' }}
+    </p>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
