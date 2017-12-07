@@ -3,7 +3,7 @@ title: "The art of problem solving"
 ---
 You will always find yourself in a situation with a problem you don't know how to solve.
 How should you find a solution to your problem? Can you figure out how resolve the problem on your own, or should you ask for help?
-This series describes a general approaches to problem solving.
+This series describes general approaches to problem solving.
 
 Problem solving is a big part of software development.
 It involves a lot of trial-and-error, reducing problems into different problems or subproblems and lots of research.
