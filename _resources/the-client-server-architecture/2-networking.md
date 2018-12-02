@@ -7,27 +7,29 @@ This resource explains how logical sides interface with each other, and how you 
 
 NOTE: For brevity, in this resource "client" refers to a logical client and "server" refers to a logical server unless stated otherwise.
 
-# The universal interface: Networking
+# Networking: The universal interface
 The connection between servers and clients is reduced to this networking interface, a universal interface.
 It is universal in the sense networking is used for any kind of connection between clients and servers, including single player.
 
-## Packets and connections
-When a server and a client connects, they establish a **connection** where they communicate with **packets**.
-This interface is quite primitive and can be described as such:
+## Messages and connections
+When a server and a client connects, they establish a **connection** where they communicate with **messages**.
+While not entirely accurate, messages are often also referred to as packets.
+The networking interface is quite primitive and can be described as such:
 
-- A **packet** is a discrete message sent over a **connection** from either side to the other.
-- A packet is serializable, meaning it can be represented as a stream of bytes.
-- The connection is bidirectional. The server can send packets to the client and vice versa.
+- A **message** is a unit of information sent over a **connection** from either side to the other.
+- A message is serializable, meaning it can be represented as a stream of bytes.
+- A connection is bi-directional. The server can send messages to the client and vice versa.
 - The connection may be terminated by either side at any time.
-- Packets are guaranteed to be received as long as the connection is not terminated.
-- Packets are guaranteed to be received in the same order as they are sent.
+- Messages are guaranteed to be received as long as the connection is not terminated.
+- Messages are guaranteed to be received in the same order as they are sent.
 
-## TCP/local connections
+## Connection types
 Minecraft uses a library called Netty to establish connections as either **TCP connections** or **local connections**.
+Local connections are created only within the same process, while TCP connections are created across processes or machines.
 _An integrated server_ will provide a local connection for the client, and TCP connections for remote clients on LAN.
 _A dedicated server_ will only provide TCP connections for remote clients.
 
-While TCP connections and local connections are more or less functionally equivalent, they differ in speed and reliability.
+TCP connections and local connections differ in speed and reliability.
 If you play video games you may be probably familiar with the terms **ping** and **packet loss**.
 For local connections, the ping is virtually zero and packet loss is nonexistent.
 For TCP connections however, ping is a significant factor, and packet loss causes significant slowdown.
