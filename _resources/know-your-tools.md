@@ -1,12 +1,10 @@
 ---
-title: Know your tools
+title: "Know your tools"
 ---
-
 This resource explains MCP and SRG environments, as well as the tools that support it, Gradle and ForgeGradle.
 It should be clear what the tools are and what they are not, and how they are related.
 
 # MCP, environments and naming
-
 The naming of classes, fields and methods are easily taken for granted. It is not as trivial as it seems on the surface, and sometimes you have to see through the magic.
 
 Releases of Minecraft Java Edition are obfuscated jar files, which means they are compiled binaries stripped of any meaningful naming information. Usually the process of reverse engineering a compiled program is complicated, but Java programs like Minecraft are rather simple to decompile. Still, the obfuscation is stripping away a lot of useful information, so one might wonder how it is possible to develop against it in the first place.
@@ -34,7 +32,6 @@ Forge replaces "Notch" names with SRG names so that mods will run in a SRG envir
 This trick allows mods to be compatible with multiple Minecraft versions.
 
 # Gradle and ForgeGradle
-
 [Gradle](https://gradle.org/) is a build tool that is commonly used to manage Java projects, with IDE integration and a rich API to build plugins.
 Gradle has uses far beyond modding and has plenty of documentation.
 The Gradle wrapper, `gradlew`, is an utility that allows developers to use Gradle without installing it.
