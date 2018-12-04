@@ -14,6 +14,7 @@ Thanks to MCP, it is possible to make sense of the Minecraft code and develop ag
 MCP routinely releases mappings.
 A mapping provides javadocs and names for fields, methods, parameters, and local variables.
 Mappings are not perfect and often change as more accurate names are found, but they are absolutely essential.
+You should update your mappings every now and then.
 
 In a development environment the game is running with MCP names to allow code be meaningful like `Minecraft.getMinecraft()`.
 This is really nice, but it is worth knowing that these names only exist in your development environment.
@@ -22,12 +23,13 @@ SRG names are names like `func_192989_b` and `field_71432_P` for methods and fie
 These names are canonical. MCP names can change while SRG names can not.
 There are multiple ways to get SRG names from MCP names and vice versa. [One option is this online tool](http://mcp.thiakil.com/).
 
-| MCP (stable_39) | SRG             | "Notch" (1.12.2) |
-| --------------  | --------------- | ---------------- |
-| `getMinecraft`  | `func_192989_b` | `M`              |
+| MCP (stable_39) | SRG              | "Notch" (1.12.2) |
+| --------------  | ---------------- | ---------------- |
+| `getMinecraft`  | `func_192989_b`  | `M`              |
+| `GRASS`         | `field_150349_c` | `aR`             |
 
 There is a concept of so-called "Notch" names, but these names are virtually transparent to modders.
-Notch names are assigned seemingly randomly by RetroGuard, the obfuscator used to make Minecraft Java Edition releases.
+"Notch" names are short gibberish names assigned by the obfuscator in Minecraft Java Edition releases.
 Forge replaces "Notch" names with SRG names so that mods will run in a SRG environment.
 This trick allows mods to be compatible with multiple Minecraft versions.
 
