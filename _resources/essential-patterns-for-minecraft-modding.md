@@ -139,17 +139,19 @@ Always send language neutral messages to the client using methods like TextCompo
 
 [Refer to the Forge documentation for more details](https://mcforge.readthedocs.io/en/latest/concepts/internationalization/).
 
-# Namespace your translation keys (<1.13)
+# Namespace your translation keys
 Unlike registry names, translation keys are not namespaced, which means it is easy to create conflicts.
-In the event of a conflict, one will override the other.
-To avoid conflicts, put your mod ID somewhere in the translation key:
-
-```java
-block.setTranslationKey(MODID + "." + name)
-```
+In the event of a conflict, one will override the other, and you get [interesting situations like this one](https://github.com/aidancbrady/Mekanism/issues/5111).
+To avoid conflicts, put your mod ID somewhere in every translation key you define:
 
 ```properties
-tile.modid.name.name=Block Name
+tile.modid.my_block.name=My Block
+```
+
+To do this with Blocks and Items you must do the following:
+
+```java
+block.setTranslationKey(MODID + "." + name);
 ```
 
 # Identify players by UUID, not username
